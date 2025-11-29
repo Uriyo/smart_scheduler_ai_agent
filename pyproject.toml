@@ -5,10 +5,11 @@ description = "Voice AI agent built with LiveKit Agents framework"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "livekit-agents[google,mcp,cartesia]~=1.2",
+    "livekit-agents[anam,cartesia,google,mcp]~=1.2",
     "livekit-plugins-openai>=1.0.0",
     "livekit-plugins-deepgram>=1.0.0",
     "livekit-plugins-silero>=1.0.0",
+    "livekit-agents[anam]>=1.2",
     "livekit-plugins-turn-detector>=1.0.0",
     "livekit-plugins-cartesia>=1.0.0",
     "python-dotenv>=1.0.0",
