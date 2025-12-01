@@ -9,10 +9,13 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 # Sync (install) dependencies in the image
-RUN uv sync --no-cache
+RUN uv sync --frozen --no-cache
 
 # Copy the rest of the project
 COPY . .
+
+# Download required model files (Silero VAD, Turn Detector, etc.)
+RUN uv run python scheduler_agent.py download-files
 
 # Default command runs the basic LiveKit agent
 CMD ["uv", "run", "python", "scheduler_agent.py", "dev"]
