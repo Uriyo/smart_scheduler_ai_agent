@@ -9,7 +9,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 # Sync (install) dependencies in the image
-RUN uv sync --frozen --no-cache
+RUN uv sync --no-cache
 
 # Copy the rest of the project
 COPY . .
