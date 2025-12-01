@@ -2,6 +2,8 @@
 
 A voice-powered AI scheduling assistant built with LiveKit Agents that helps users schedule meetings through natural conversation. The agent integrates with Google Calendar to find available time slots, check availability, and create calendar events seamlessly.
 
+[[Watch the video]](https://drive.google.com/file/d/1g6xZKiN2KkYecgW-xvwYBIPOabbl_UIR/view)
+
 ## 🎯 Features
 
 - **Voice-First Interface**: Natural voice conversation using Cartesia for speech-to-text and text-to-speech
